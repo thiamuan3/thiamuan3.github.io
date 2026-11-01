@@ -8,7 +8,6 @@ import PersonalitySection from './components/PersonalitySection.vue'
 import SkillsSection from './components/SkillsSection.vue'
 import ExperienceSection from './components/ExperienceSection.vue'
 import EducationSection from './components/EducationSection.vue'
-import SiteFooter from './components/SiteFooter.vue'
 import Toast from './components/Toast.vue'
 import PrintResume from './components/PrintResume.vue'
 
@@ -31,7 +30,6 @@ useTheme()
       <ExperienceSection />
       <EducationSection />
     </main>
-    <SiteFooter />
     <Toast />
   </div>
   <!-- Print layout: hidden on screen, visible when printing -->
