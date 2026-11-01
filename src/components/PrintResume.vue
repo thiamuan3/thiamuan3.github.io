@@ -308,7 +308,6 @@ const { currentLang, t } = useLang()
   padding-left: 10px;
   border-left: 2px solid #CBD5E1;
   margin-bottom: 6px;
-  break-inside: avoid;
 }
 .print-exp-highlight { border-left-color: #EA580C; }
 
@@ -377,7 +376,6 @@ const { currentLang, t } = useLang()
 }
 .print-early-item {
   margin-bottom: 3px;
-  break-inside: avoid;
 }
 .print-early-name {
   font-size: 8.5pt;
