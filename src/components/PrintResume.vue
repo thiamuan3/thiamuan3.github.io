@@ -32,10 +32,10 @@ const { currentLang, t } = useLang()
         </div>
         <p class="print-summary">
           <span v-if="currentLang === 'th'">
-            นักพัฒนา <strong>Full Stack</strong> ประสบการณ์กว่า <strong>15+ ปี</strong> ในการออกแบบและพัฒนาระบบเว็บแอปพลิเคชัน ระบบอัตโนมัติทางธุรกิจ และระบบแบ็กเอนด์ระดับองค์กร ด้วย <strong>Node.js, Vue.js, PHP (Laravel, CodeIgniter)</strong> และ <strong>Golang</strong> พร้อมประสบการณ์ด้าน <strong>Docker</strong> และ AI-assisted development
+            นักพัฒนา <strong>Full Stack</strong> ประสบการณ์กว่า <strong>15+ ปี</strong> ผ่านการทำงานกับองค์กรชั้นนำและมหาชน <strong>8+ แห่ง</strong> ในการออกแบบและพัฒนาระบบเว็บแอปพลิเคชัน ระบบอัตโนมัติทางธุรกิจ และระบบแบ็กเอนด์ระดับองค์กร ด้วย <strong>Node.js, Vue.js, PHP (Laravel, CodeIgniter)</strong> และ <strong>Golang</strong> พร้อมประสบการณ์ด้าน <strong>Docker</strong> และ AI-assisted development
           </span>
           <span v-else>
-            Results-driven <strong>Full Stack Developer</strong> with over <strong>15+ years</strong> of continuous experience designing and deploying scalable web applications, business automation pipelines, and enterprise backend systems. Specialized in <strong>Node.js, Vue.js, PHP (Laravel, CodeIgniter)</strong>, and <strong>Golang</strong>, with robust experience containerizing with <strong>Docker</strong>, AI-assisted development, and streamlining multi-department enterprise workflows.
+            Results-driven <strong>Full Stack Developer</strong> with over <strong>15+ years</strong> of experience across <strong>8+ enterprises &amp; public companies</strong>, designing and deploying scalable web applications, business automation pipelines, and enterprise backend systems. Specialized in <strong>Node.js, Vue.js, PHP (Laravel, CodeIgniter)</strong>, and <strong>Golang</strong>, with robust experience in <strong>Docker</strong> and AI-assisted development.
           </span>
         </p>
       </header>
@@ -104,22 +104,7 @@ const { currentLang, t } = useLang()
             </div>
           </section>
 
-          <!-- Career Stats — same row format as Languages -->
-          <section class="print-left-section">
-            <h2 class="print-left-title">
-              {{ currentLang === 'th' ? 'ภาพรวม' : 'Career Overview' }}
-            </h2>
-            <div class="print-lang-row">
-              <span class="print-lang-name">15+ {{ currentLang === 'th' ? 'ปี' : 'Years' }}</span>
-              <span class="print-lang-level">{{ currentLang === 'th' ? 'Software Engineering' : 'Software Engineering' }}</span>
-            </div>
-            <div class="print-lang-row">
-              <span class="print-lang-name">8+</span>
-              <span class="print-lang-level">{{ currentLang === 'th' ? 'องค์กรชั้นนำ & มหาชน' : 'Enterprises & Public Cos.' }}</span>
-            </div>
-          </section>
-
-        </aside>
+          </aside>
 
         <!-- RIGHT: Professional Experience -->
         <section class="print-right">
