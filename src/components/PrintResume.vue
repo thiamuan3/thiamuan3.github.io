@@ -127,7 +127,7 @@ const { currentLang, t } = useLang()
           </article>
 
           <!-- Early Career — page 2, formatted like left-column items -->
-          <article class="print-early print-exp-entry" style="page-break-before: always;">
+          <article class="print-early print-exp-entry">
             <div class="print-early-header">
               <span>{{ currentLang === 'th' ? 'ช่วงเริ่มต้นอาชีพ' : 'Early Career Foundation' }}</span>
               <span class="print-early-range">{{ earlyCareer.range }}</span>
