@@ -144,7 +144,7 @@ const statItems = [
           </article>
 
           <!-- Early Career -->
-          <article class="print-early">
+          <article class="print-early print-exp-entry">
             <div class="print-early-header">
               <span>{{ currentLang === 'th' ? 'ช่วงเริ่มต้นอาชีพ (Web Development)' : 'Early Career Foundation (Web Development)' }}</span>
               <span class="print-early-range">{{ earlyCareer.range }}</span>
