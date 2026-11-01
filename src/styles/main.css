@@ -85,10 +85,8 @@ html {
     box-shadow: none !important;
   }
   /* Remove overlay / decorative backgrounds that waste ink */
-  [class*="radial-gradient"],
   .opacity-40,
-  .opacity-20,
-  .pointer-events-none {
+  .opacity-20 {
     display: none !important;
   }
   /* Profile photo: keep visible at reasonable size */

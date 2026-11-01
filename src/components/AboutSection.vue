@@ -26,7 +26,7 @@ const overviewRowClasses = ['font-semibold text-slate-900 dark:text-white', 'fon
     class="scroll-mt-20 pt-8 pb-10 sm:pt-12 sm:pb-16 border-b border-slate-200 dark:border-slate-800 relative overflow-hidden"
   >
     <div
-      class="absolute inset-0 opacity-40 dark:opacity-20 pointer-events-none bg-[radial-gradient(#3B82F6_1px,transparent_1px)] [background-size:20px_20px]"
+      class="no-print absolute inset-0 opacity-40 dark:opacity-20 pointer-events-none bg-[radial-gradient(#3B82F6_1px,transparent_1px)] [background-size:20px_20px]"
     ></div>
     <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
       <div class="flex flex-col lg:flex-row items-start lg:items-center justify-between gap-8">
