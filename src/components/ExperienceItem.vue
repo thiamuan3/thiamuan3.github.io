@@ -33,7 +33,7 @@ const dotClasses = {
 <template>
   <div class="relative group">
     <div
-      class="absolute -left-[32px] sm:-left-[40px] top-1.5 w-4 h-4 rounded-full"
+      class="absolute -left-[36px] sm:-left-[45px] top-1.5 w-4 h-4 rounded-full"
       :class="dotClasses[variant]"
     ></div>
     <div
