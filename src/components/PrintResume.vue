@@ -143,17 +143,17 @@ const statItems = [
             </div>
           </article>
 
-          <!-- Early Career -->
-          <article class="print-early print-exp-entry">
+          <!-- Early Career — page 2, formatted like left-column items -->
+          <article class="print-early print-exp-entry" style="page-break-before: always;">
             <div class="print-early-header">
-              <span>{{ currentLang === 'th' ? 'ช่วงเริ่มต้นอาชีพ (Web Development)' : 'Early Career Foundation (Web Development)' }}</span>
+              <span>{{ currentLang === 'th' ? 'ช่วงเริ่มต้นอาชีพ' : 'Early Career Foundation' }}</span>
               <span class="print-early-range">{{ earlyCareer.range }}</span>
             </div>
-            <p class="print-early-text">
-              <template v-for="(entry, idx) in earlyCareer.entries" :key="idx">
-                <strong>{{ entry.company }}</strong> ({{ t(entry.period) }}) — {{ t(entry.summary) }}<template v-if="idx < earlyCareer.entries.length - 1"> · </template>
-              </template>
-            </p>
+            <div v-for="(entry, idx) in earlyCareer.entries" :key="idx" class="print-early-item">
+              <div class="print-early-name">{{ entry.company }}</div>
+              <div class="print-early-period-text">{{ t(entry.period) }}</div>
+              <div class="print-early-desc">{{ t(entry.summary) }}</div>
+            </div>
           </article>
 
         </section>
@@ -395,6 +395,7 @@ const statItems = [
   font-size: 9pt;
   font-weight: 700;
   color: #13254D;
+  margin-bottom: 3px;
 }
 .print-early-range {
   font-size: 8pt;
@@ -402,11 +403,22 @@ const statItems = [
   color: #64748B;
   font-family: monospace;
 }
-.print-early-text {
-  font-size: 8.2pt;
-  color: #475569;
-  line-height: 1.3;
-  margin: 2px 0 0 0;
+.print-early-item {
+  margin-bottom: 3px;
+  break-inside: avoid;
 }
-.print-early-text strong { color: #13254D; }
+.print-early-name {
+  font-size: 8.5pt;
+  font-weight: 600;
+  color: #13254D;
+}
+.print-early-period-text {
+  font-size: 7.5pt;
+  color: #64748B;
+}
+.print-early-desc {
+  font-size: 8pt;
+  color: #475569;
+  line-height: 1.25;
+}
 </style>
