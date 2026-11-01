@@ -21,11 +21,10 @@ export const hero = {
 
 /**
  * Career Overview card (top-right of the hero).
- * verifiedBadge is A7 group: single value.
+ * The old "VERIFIED" badge was removed by owner decision — no backing source.
  */
 export const overviewCard = {
   label: { en: 'Career Overview', th: 'ภาพรวมประสบการณ์' },
-  verifiedBadge: 'VERIFIED',
   stats: [
     { value: stats.yearsExperience, label: { en: 'Software Engineering', th: 'Software Engineering' } },
     { value: stats.enterpriseCount, label: { en: 'Enterprises & Public Cos.', th: 'องค์กรชั้นนำ & มหาชน' } },
