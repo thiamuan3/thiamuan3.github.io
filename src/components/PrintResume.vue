@@ -77,7 +77,7 @@ const statItems = [
           </section>
 
           <!-- Work Personality -->
-          <section class="print-personality-box">
+          <section class="print-left-section">
             <h2 class="print-left-title">
               Work Personality: ENFP-A
             </h2>
@@ -282,13 +282,6 @@ const statItems = [
 .print-skill-text { font-size: 8.5pt; color: #334155; line-height: 1.3; margin: 1px 0 0 0; }
 
 /* Personality */
-.print-personality-box {
-  background: #F8FAFC;
-  border: 1px solid #E2E8F0;
-  border-radius: 6px;
-  padding: 7px;
-  margin-bottom: 10px;
-}
 .print-personality-sub { font-size: 8pt; color: #475569; font-weight: 500; margin: 0; }
 .print-personality-list {
   font-size: 8.5pt;
