@@ -2,6 +2,7 @@
 import { useLang } from '../composables/useLang'
 import { name, secondaryName, summary, location, contact, getEmail, getTel, getTelDisplay } from '../data/profile'
 import { items, earlyCareer } from '../data/experience'
+import { printBullets, printEarlySummaries } from '../data/print'
 import { degree, languages } from '../data/education'
 import profileImg from '../assets/profile.jpg'
 
@@ -35,7 +36,7 @@ const { currentLang, t } = useLang()
             นักพัฒนา <strong>Full Stack</strong> ประสบการณ์กว่า <strong>15+ ปี</strong> ผ่านการทำงานกับองค์กรชั้นนำและมหาชน <strong>8+ แห่ง</strong> ในการออกแบบและพัฒนาระบบเว็บแอปพลิเคชัน ระบบอัตโนมัติทางธุรกิจ และระบบแบ็กเอนด์ระดับองค์กร ด้วย <strong>Node.js, Vue.js, PHP (Laravel, CodeIgniter)</strong> และ <strong>Golang</strong> พร้อมประสบการณ์ด้าน <strong>Docker</strong> และ AI-assisted development
           </span>
           <span v-else>
-            Results-driven <strong>Full Stack Developer</strong> with over <strong>15+ years</strong> of experience across <strong>8+ enterprises &amp; public companies</strong>, designing and deploying scalable web applications, business automation pipelines, and enterprise backend systems. Specialized in <strong>Node.js, Vue.js, PHP (Laravel, CodeIgniter)</strong>, and <strong>Golang</strong>, with robust experience in <strong>Docker</strong> and AI-assisted development.
+            <strong>Full Stack Developer</strong> with <strong>15+ years</strong> across <strong>8+ enterprises &amp; public companies</strong>, building web applications, business automation, and enterprise backends with <strong>Node.js, Vue.js, PHP (Laravel, CodeIgniter)</strong> and <strong>Golang</strong>. Skilled in <strong>Docker</strong> and AI-assisted development.
           </span>
         </p>
       </header>
@@ -119,7 +120,7 @@ const { currentLang, t } = useLang()
             </div>
             <div class="print-exp-company">{{ item.company }}</div>
             <ul class="print-exp-list">
-              <li v-for="(b, j) in item.bullets" :key="j" v-html="t(b)"></li>
+              <li v-for="(b, j) in printBullets[item.company] ?? item.bullets" :key="j" v-html="t(b)"></li>
             </ul>
             <div class="print-exp-tags" v-if="item.techTags?.length">
               Tech Stack: {{ item.techTags.join(' · ') }}
@@ -134,7 +135,7 @@ const { currentLang, t } = useLang()
             </div>
             <div v-for="(entry, idx) in earlyCareer.entries" :key="idx" class="print-early-item">
               <div><strong class="print-early-name">{{ entry.company }}</strong> <span class="print-early-period-inline">({{ t(entry.period) }})</span></div>
-              <div class="print-early-desc">{{ t(entry.summary) }}</div>
+              <div class="print-early-desc">{{ t(printEarlySummaries[entry.company] ?? entry.summary) }}</div>
             </div>
           </article>
 

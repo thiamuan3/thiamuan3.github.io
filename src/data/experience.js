@@ -62,12 +62,16 @@ export const items = [
         th: '<strong class="text-slate-900 dark:text-white">System Architecture &amp; Automation:</strong> ออกแบบและพัฒนาระบบอัตโนมัติแบบครบวงจรด้วย Node.js และ Vue.js สำหรับงานบริหารจัดการและการส่งมอบโครงการอสังหาริมทรัพย์',
       },
       {
-        en: '<strong class="text-slate-900 dark:text-white">Auto Label &amp; MOA Generation:</strong> Engineered automated mail label and legal MOA document assembly systems, eliminating manual data entry and streamlining high-volume correspondence across projects.',
-        th: '<strong class="text-slate-900 dark:text-white">Auto Label &amp; MOA Generation:</strong> พัฒนาระบบสร้างใบจ่าหน้าและเอกสารสัญญาแนบท้าย (MOA) อัตโนมัติ ลดปัญหาคอขวดจากการกรอกข้อมูลด้วยมือในกระบวนการกระจายเอกสารโครงการ',
+        en: '<strong class="text-slate-900 dark:text-white">Auto Label Generation System:</strong> Engineered an automated label generator that eliminated manual data entry bottlenecks in parcel and document routing across development projects.',
+        th: '<strong class="text-slate-900 dark:text-white">Auto Label Generation System:</strong> พัฒนาระบบสร้างใบจ่าหน้าอัตโนมัติ ช่วยลดปัญหาคอขวดจากการกรอกข้อมูลด้วยมือในกระบวนการกระจายเอกสารโครงการ',
       },
       {
         en: '<strong class="text-slate-900 dark:text-white">Pre-Transfer Management System:</strong> Built pre-transfer operations management system, streamlining cross-department document handoffs and unit inspection sign-offs.',
         th: '<strong class="text-slate-900 dark:text-white">Pre-Transfer Management System:</strong> พัฒนาระบบบริหารจัดการก่อนโอนกรรมสิทธิ์ เพิ่มความคล่องตัวในการประสานงานด้านเอกสารข้ามแผนกและรอบการอนุมัติส่งมอบโครงการ',
+      },
+      {
+        en: '<strong class="text-slate-900 dark:text-white">MOA Document Generation System:</strong> Developed automated Memorandum of Agreement (MOA) generation tools, handling high-volume contract document assembly with legal formatting requirements.',
+        th: '<strong class="text-slate-900 dark:text-white">MOA Document Generation System:</strong> ออกแบบระบบสร้างเอกสารสัญญาแนบท้าย (MOA) อัตโนมัติ รองรับการรวบรวมเอกสารทางกฎหมายปริมาณมากได้อย่างถูกต้อง',
       },
       {
         en: '<strong class="text-slate-900 dark:text-white">Enterprise Back-Office Maintenance:</strong> Maintained and expanded critical PHP/Laravel back-office suites (Universal Setup, POS, Operation Support, System Access Control) containerized with Docker.',
