@@ -1,18 +1,11 @@
 <script setup>
 import { useLang } from '../composables/useLang'
 import { name, secondaryName, summary, location, contact, getEmail, getTel, getTelDisplay } from '../data/profile'
-import { overviewCard } from '../data/about'
 import { items, earlyCareer } from '../data/experience'
 import { degree, languages } from '../data/education'
 import profileImg from '../assets/profile.jpg'
 
 const { currentLang, t } = useLang()
-
-// Left sidebar: career stats from overviewCard
-const statItems = [
-  { value: '15+', label: currentLang.value === 'th' ? 'ปีประสบการณ์' : 'Years Experience' },
-  { value: '8+', label: currentLang.value === 'th' ? 'องค์กร / มหาชน' : 'Companies / PCL' },
-]
 </script>
 
 <template>
@@ -111,13 +104,18 @@ const statItems = [
             </div>
           </section>
 
-          <!-- Career Stats -->
-          <section class="print-stats-box">
-            <div class="print-stats-grid">
-              <div v-for="(s, i) in statItems" :key="i" class="print-stat-card">
-                <div :class="i === 0 ? 'text-[#C62828]' : 'text-[#1E3A8A]'" class="print-stat-value">{{ s.value }}</div>
-                <div class="print-stat-label">{{ s.label }}</div>
-              </div>
+          <!-- Career Stats — same row format as Languages -->
+          <section class="print-left-section">
+            <h2 class="print-left-title">
+              {{ currentLang === 'th' ? 'ภาพรวม' : 'Career Overview' }}
+            </h2>
+            <div class="print-lang-row">
+              <span class="print-lang-name">15+ {{ currentLang === 'th' ? 'ปี' : 'Years' }}</span>
+              <span class="print-lang-level">{{ currentLang === 'th' ? 'Software Engineering' : 'Software Engineering' }}</span>
+            </div>
+            <div class="print-lang-row">
+              <span class="print-lang-name">8+</span>
+              <span class="print-lang-level">{{ currentLang === 'th' ? 'องค์กรชั้นนำ & มหาชน' : 'Enterprises & Public Cos.' }}</span>
             </div>
           </section>
 
@@ -303,19 +301,6 @@ const statItems = [
 .print-lang-row { display: flex; justify-content: space-between; font-size: 9pt; margin-bottom: 1px; }
 .print-lang-name { font-weight: 600; color: #13254D; }
 .print-lang-level { color: #475569; }
-
-/* Stats */
-.print-stats-box {
-  border: 1px solid #E2E8F0;
-  border-radius: 6px;
-  padding: 7px;
-  background: #F8FAFC;
-  margin-top: 10px;
-}
-.print-stats-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 6px; text-align: center; }
-.print-stat-card { background: #FFFFFF; border: 1px solid #F1F5F9; border-radius: 4px; padding: 4px; }
-.print-stat-value { font-size: 12pt; font-weight: 700; font-family: 'Prompt', 'Inter', sans-serif; }
-.print-stat-label { font-size: 7.5pt; color: #475569; text-transform: uppercase; font-weight: 500; }
 
 /* ========== RIGHT COLUMN ========== */
 .print-right-title {
