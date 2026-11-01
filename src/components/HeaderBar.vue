@@ -46,7 +46,7 @@ function onPrint() {
           >
         </div>
       </a>
-      <nav class="hidden md:flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
+      <nav class="no-print hidden md:flex items-center gap-6 text-sm font-medium text-slate-600 dark:text-slate-300">
         <a
           v-for="item in nav"
           :key="item.id"

@@ -55,23 +55,70 @@ html {
 }
 
 @media print {
+  /* Hide interactive / chrome-only elements */
   .no-print {
     display: none !important;
   }
+  /* Force light readable background even if dark-mode was active */
+  html, body, section, div, header, footer, nav, main, article,
+  [class*="dark:bg-"],
+  [class*="dark:from-"],
+  [class*="dark:to-"],
+  .bg-cream\/40,
+  .bg-cream\/60 {
+    background: white !important;
+    background-color: white !important;
+  }
+  /* Force dark text to black so it is readable on paper */
+  [class*="dark:text-"] {
+    color: #0f172a !important;
+  }
+  /* Borders: keep structure but dial down contrast */
+  .border {
+    border-color: #cbd5e1 !important;
+  }
+  [class*="border-slate-"] {
+    border-color: #cbd5e1 !important;
+  }
+  /* Shadows: no shadows on paper */
+  * {
+    box-shadow: none !important;
+  }
+  /* Remove overlay / decorative backgrounds that waste ink */
+  [class*="radial-gradient"],
+  .opacity-40,
+  .opacity-20,
+  .pointer-events-none {
+    display: none !important;
+  }
+  /* Profile photo: keep visible at reasonable size */
+  img {
+    max-width: 128px;
+    height: auto;
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+  /* Stay black on white everywhere */
   body {
     background: white !important;
     color: black !important;
   }
-  .page-break {
-    page-break-before: always;
+  /* Page-break between major sections */
+  #about      { page-break-after: avoid; }
+  #personality { page-break-before: always; page-break-after: avoid; }
+  #experience { page-break-before: always; }
+  .page-break { page-break-before: always; }
+  /* Keep layout compact */
+  section {
+    padding-top: 1rem !important;
+    padding-bottom: 1rem !important;
   }
-  /* v4 renames/rescales shadow utilities, so blanket-disable shadows in print
-     instead of listing the v3 class names the export used (plan D3a). */
-  * {
-    box-shadow: none !important;
-  }
-  .border {
-    border-color: #e2e8f0 !important;
+  h1, h2, h3, h4 { color: #0f172a !important; }
+  /* Links: show URL, keep readable */
+  a { color: #1e3a8a !important; text-decoration: underline; }
+  /* Keep Material Symbols readable as text fallback */
+  .material-symbols-outlined {
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
   }
 }
 
