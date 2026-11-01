@@ -1,6 +1,6 @@
 <script setup>
 import { useLang } from '../composables/useLang'
-import { name, secondaryName, summary, location, contact, getEmail, getTel, getTelDisplay } from '../data/profile'
+import { name, summary, location, contact, getEmail, getTel, getTelDisplay } from '../data/profile'
 import { items, earlyCareer } from '../data/experience'
 import { printBullets, printEarlySummaries } from '../data/print'
 import { degree, languages } from '../data/education'
@@ -17,10 +17,7 @@ const { currentLang, t } = useLang()
       <header class="print-header-block">
         <div class="print-header-row">
           <div class="print-header-text">
-            <h1 class="print-name">
-              {{ t(name) }}
-              <span class="print-secondary">{{ t(secondaryName) }}</span>
-            </h1>
+            <h1 class="print-name">{{ t(name) }}</h1>
             <p class="print-role">Senior Full Stack Developer / Software Engineer</p>
             <div class="print-contact-line">
               {{ t(location) }} · {{ getEmail() }} · {{ getTelDisplay() }}
@@ -191,12 +188,6 @@ const { currentLang, t } = useLang()
   color: #1E3A8A;
   line-height: 1.15;
   margin: 0;
-}
-.print-secondary {
-  font-size: 14pt;
-  font-weight: 400;
-  color: #475569;
-  margin-left: 4px;
 }
 
 .print-role {
