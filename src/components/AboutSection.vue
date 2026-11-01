@@ -45,13 +45,6 @@ const overviewRowClasses = ['font-semibold text-slate-900 dark:text-white', 'fon
                 loading="eager"
               />
             </div>
-            <!-- Export shipped this badge as an empty div; task_alt added as a fidelity fix (plan step 6). -->
-            <div
-              class="absolute -bottom-2 -right-2 bg-emerald-500 text-white rounded-full p-1.5 shadow-md flex items-center justify-center border-2 border-white dark:border-slate-900"
-              :title="hero.badgeTitle"
-            >
-              <span class="material-symbols-outlined text-[20px]">task_alt</span>
-            </div>
           </div>
           <div class="space-y-4">
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
