@@ -10,6 +10,7 @@ import ExperienceSection from './components/ExperienceSection.vue'
 import EducationSection from './components/EducationSection.vue'
 import SiteFooter from './components/SiteFooter.vue'
 import Toast from './components/Toast.vue'
+import PrintResume from './components/PrintResume.vue'
 
 // docTitle from ui.js overrides the Wave 1 default titles; useTheme registers
 // the dark-mode print fix (plan D6).
@@ -18,8 +19,9 @@ useTheme()
 </script>
 
 <template>
+  <!-- Screen layout: hidden when printing -->
   <div
-    class="min-h-screen bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-sans antialiased selection:bg-orange-500 selection:text-white transition-colors duration-300 leading-relaxed text-lg"
+    class="screen-only min-h-screen bg-background-light dark:bg-background-dark text-slate-800 dark:text-slate-100 font-sans antialiased selection:bg-orange-500 selection:text-white transition-colors duration-300 leading-relaxed text-lg"
   >
     <HeaderBar />
     <main>
@@ -32,4 +34,6 @@ useTheme()
     <SiteFooter />
     <Toast />
   </div>
+  <!-- Print layout: hidden on screen, visible when printing -->
+  <PrintResume />
 </template>
