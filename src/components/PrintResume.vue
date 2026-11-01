@@ -133,8 +133,7 @@ const { currentLang, t } = useLang()
               <span class="print-early-range">{{ earlyCareer.range }}</span>
             </div>
             <div v-for="(entry, idx) in earlyCareer.entries" :key="idx" class="print-early-item">
-              <div class="print-early-name">{{ entry.company }}</div>
-              <div class="print-early-period-text">{{ t(entry.period) }}</div>
+              <div><strong class="print-early-name">{{ entry.company }}</strong> <span class="print-early-period-inline">({{ t(entry.period) }})</span></div>
               <div class="print-early-desc">{{ t(entry.summary) }}</div>
             </div>
           </article>
@@ -382,7 +381,7 @@ const { currentLang, t } = useLang()
   font-weight: 600;
   color: #13254D;
 }
-.print-early-period-text {
+.print-early-period-inline {
   font-size: 7.5pt;
   color: #64748B;
 }
