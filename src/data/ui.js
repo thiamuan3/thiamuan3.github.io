@@ -18,7 +18,7 @@ export const nav = [
 ]
 
 /** Header CTA button (opens mailto). */
-export const getInTouch = { en: 'Get in Touch', th: 'ติดต่อร่วมงาน' }
+export const getInTouch = { en: 'Get in Touch', th: 'ติดต่อ' }
 
 /** Language switcher button titles — fixed per button, not locale-swapped (same in both exports). */
 export const langSwitchTitles = {
