@@ -164,13 +164,15 @@ const { currentLang, t } = useLang()
   max-width: 210mm;
   margin: 0 auto;
   padding: 0;
+  font-size: 9pt;
+  line-height: 1.35;
 }
 
 /* ========== HEADER ========== */
 .print-header-block {
   border-bottom: 2px solid #1E3A8A;
-  padding-bottom: 10px;
-  margin-bottom: 12px;
+  padding-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 .print-header-row {
@@ -227,11 +229,11 @@ const { currentLang, t } = useLang()
 }
 
 .print-summary {
-  font-size: 10pt;
-  line-height: 1.42;
+  font-size: 9pt;
+  line-height: 1.35;
   color: #13254D;
   text-align: justify;
-  margin: 8px 0 0 0;
+  margin: 6px 0 0 0;
 }
 .print-summary strong { color: #1E3A8A; }
 
@@ -239,13 +241,13 @@ const { currentLang, t } = useLang()
 .print-grid {
   display: grid;
   grid-template-columns: 4fr 8fr;
-  gap: 16px;
+  gap: 12px;
 }
 
 /* ========== LEFT COLUMN ========== */
 .print-left { padding-right: 0; }
 
-.print-left-section { margin-bottom: 10px; }
+.print-left-section { margin-bottom: 7px; }
 
 .print-left-title {
   font-size: 9.5pt;
@@ -260,7 +262,7 @@ const { currentLang, t } = useLang()
 }
 
 /* Skills */
-.print-skill-item { margin-bottom: 7px; }
+.print-skill-item { margin-bottom: 5px; }
 .print-skill-label { font-size: 9pt; font-weight: 700; color: #13254D; }
 .print-skill-text { font-size: 8.5pt; color: #334155; line-height: 1.3; margin: 1px 0 0 0; }
 
@@ -305,7 +307,7 @@ const { currentLang, t } = useLang()
   position: relative;
   padding-left: 10px;
   border-left: 2px solid #CBD5E1;
-  margin-bottom: 9px;
+  margin-bottom: 6px;
   break-inside: avoid;
 }
 .print-exp-highlight { border-left-color: #EA580C; }
@@ -337,10 +339,10 @@ const { currentLang, t } = useLang()
 }
 
 .print-exp-list {
-  font-size: 9pt;
-  line-height: 1.32;
+  font-size: 8pt;
+  line-height: 1.25;
   color: #13254D;
-  margin: 3px 0 0 0;
+  margin: 2px 0 0 0;
   padding-left: 14px;
 }
 .print-exp-list li { margin-bottom: 1px; }
