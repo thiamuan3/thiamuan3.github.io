@@ -1,11 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>Hello there!</h1>
-</body>
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Anuchit Thiam-uan (อนุชิต เทียมอวน) — Senior Backend / Full-stack Developer</title>
+    <link rel="icon" href="data:," />
+    <script>
+      // Theme init runs before paint to avoid a light flash in dark mode (plan D7).
+      // Mirrors the export script: localStorage.theme wins, else prefers-color-scheme.
+      (function () {
+        try {
+          var prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          var isDark = localStorage.theme === 'dark' || (!('theme' in localStorage) && prefersDark);
+          document.documentElement.classList.toggle('dark', isDark);
+        } catch (e) {
+          /* localStorage blocked — keep light default (plan risk R6) */
+        }
+      })();
+    </script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!-- Sarabun dropped deliberately: never referenced by any font stack (plan D3a). -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Prompt:wght@400;500;600;700&family=Fira+Code:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
 </html>

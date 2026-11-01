@@ -1,0 +1,88 @@
+@import "tailwindcss";
+
+/* Never scan the compiled site: docs/ is committed (GitHub Pages serves it), so
+   Tailwind would otherwise re-detect class names in the previous build output
+   and accumulate stale utilities on every rebuild. Path is relative to this file. */
+@source not "../../docs";
+
+/* Class-based dark mode, matching the export's `darkMode: "class"` (plan D3a). */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  /* Brand palette from the design export (plan step 2). */
+  --color-primary: #1e3a8a; /* Royal Navy */
+  --color-primary-dark: #172554;
+  --color-background-light: #f8fafc;
+  --color-background-dark: #0b0f19;
+
+  --color-navy-800: #1e3a8a;
+  --color-navy-900: #0f172a;
+  --color-navy-950: #070c18;
+
+  --color-saffron-500: #f97316;
+  --color-saffron-600: #ea580c;
+
+  /* Design's own emerald hex overrides Tailwind defaults (plan D3a). */
+  --color-emerald-500: #10b981;
+  --color-emerald-600: #059669;
+
+  --color-cinnabar: #dc2626;
+  --color-cream: #fffbf2;
+
+  --font-sans: "Plus Jakarta Sans", "Prompt", sans-serif;
+  --font-mono: "Fira Code", monospace;
+
+  /* Bare `rounded` (~40 uses in the design) maps to this token in v4 (plan D3a). */
+  --radius: 0.75rem;
+}
+
+/* Root typography from the export's <html style="..."> — moved to CSS (plan D3a).
+   Keep font-size: typography across the page scales from it. */
+html {
+  font-size: 18px;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizelegibility;
+}
+
+/* Material Symbols defaults from the export. */
+.material-symbols-outlined {
+  font-variation-settings:
+    "FILL" 0,
+    "wght" 400,
+    "GRAD" 0,
+    "opsz" 24;
+  vertical-align: middle;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: white !important;
+    color: black !important;
+  }
+  .page-break {
+    page-break-before: always;
+  }
+  /* v4 renames/rescales shadow utilities, so blanket-disable shadows in print
+     instead of listing the v3 class names the export used (plan D3a). */
+  * {
+    box-shadow: none !important;
+  }
+  .border {
+    border-color: #e2e8f0 !important;
+  }
+}
+
+/* Respect users who ask for less motion (plan step 2). */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
