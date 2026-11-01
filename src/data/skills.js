@@ -25,7 +25,7 @@ export const section = {
   eyebrow: { en: 'Technical Arsenal', th: 'คลังทักษะทางเทคนิค' },
   heading: { en: 'Technical Skills & Competencies', th: 'ทักษะและความเชี่ยวชาญทางเทคนิค' },
   intro: {
-    en: 'Categorized by operational domain: Back-office automation, Enterprise APIs, Distributed Systems, and AI-Assisted Engineering',
+    en: 'Categorized by operational domain: Back-office systems, Enterprise APIs, Distributed Systems, and AI-Assisted Engineering',
     th: 'แยกตามหมวดหมู่ครอบคลุมการพัฒนา Back-office, Enterprise APIs, Distributed Architecture และการเขียนโปรแกรมร่วมกับ AI',
   },
 }
@@ -60,7 +60,7 @@ export const categories = [
     icon: 'smart_toy',
     // canonical: TH export
     title: { en: 'AI-Assisted Programming', th: 'การพัฒนาซอฟต์แวร์ด้วย AI' },
-    subtitle: { en: 'Agentic Coding & Automation', th: 'การพัฒนาซอฟต์แวร์ด้วย AI-Assisted Tools' },
+    subtitle: { en: 'Agentic Coding & AI Workflows', th: 'การพัฒนาซอฟต์แวร์ด้วย AI-Assisted Tools' },
     chipGroupLabel: { en: 'AI Tools & Agents', th: 'เครื่องมือและเอเจนต์ AI' },
     chips: ['Claude Code', 'Antigravity', 'OpenCode'],
   },

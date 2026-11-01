@@ -133,7 +133,7 @@ export const strengths = [
   {
     icon: 'hub',
     // canonical: TH export
-    title: { en: 'Pragmatic Architecture & Automation', th: 'สถาปัตยกรรมระบบที่เรียบง่ายและเป็นประโยชน์จริง' },
+    title: { en: 'Pragmatic Architecture & Practical Tools', th: 'สถาปัตยกรรมระบบที่เรียบง่ายและเป็นประโยชน์จริง' },
     description: {
       en: 'Focuses on maintainable, low-overhead tools and explicit data flows rather than over-engineered systems, prioritizing business outcomes.',
       th: 'มุ่งเน้นการออกแบบระบบที่เรียบง่าย ดูแลรักษาได้ในระยะยาว และการไหลของข้อมูลที่ชัดเจน เพื่อลดความซับซ้อนที่ไม่จำเป็นและเพิ่มความคล่องตัวในงานซอฟต์แวร์',

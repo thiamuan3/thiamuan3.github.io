@@ -10,6 +10,8 @@ import { items, earlyCareer } from './experience'
  * Noble's umbrella "System Architecture & Automation" bullet is left out of
  * print (owner decision) — the Auto Label / Pre-Transfer / Back-Office bullets
  * and the Tech Stack tags already carry its content; the web page keeps it.
+ * Print wording avoids the "automation" framing per owner: systems are
+ * described by the convenience they give users instead.
  * Entries without an override print their web wording unchanged.
  *
  * Bullets are HTML strings rendered with v-html — repo-static data only,
@@ -33,8 +35,8 @@ const moneyTable = webBullets(MONEYTABLE)
 export const printBullets = {
   [NOBLE]: [
     {
-      en: '<strong>Auto Label &amp; MOA Generation:</strong> Automated mail-label and high-volume legal MOA document generation, eliminating manual data entry.',
-      th: '<strong>Auto Label &amp; MOA Generation:</strong> พัฒนาระบบสร้างใบจ่าหน้าและเอกสารสัญญาแนบท้าย (MOA) อัตโนมัติ ลดปัญหาคอขวดจากการกรอกข้อมูลด้วยมือในกระบวนการกระจายเอกสารโครงการ',
+      en: '<strong>Label &amp; MOA Generation:</strong> Built mail-label and legal MOA document tools that make high-volume paperwork faster and easier for staff.',
+      th: '<strong>ระบบใบจ่าหน้าและเอกสาร MOA:</strong> พัฒนาระบบช่วยสร้างใบจ่าหน้าและจัดทำเอกสารสัญญาแนบท้าย (MOA) อำนวยความสะดวกให้เจ้าหน้าที่ ลดงานกรอกข้อมูลด้วยมือในโครงการ',
     },
     {
       en: '<strong>Pre-Transfer Management System:</strong> Built the system to streamline cross-department document handoffs and unit inspection sign-offs.',

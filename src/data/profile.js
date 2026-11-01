@@ -16,8 +16,8 @@ export const secondaryName = { en: '(อนุชิต เทียมอวน
 
 /** Hero career summary paragraph. */
 export const summary = {
-  en: 'Full Stack & Backend Developer with over 15 years of experience delivering scalable web applications, internal automation tools, and enterprise workflows using Node.js, Vue.js, PHP (Laravel, CodeIgniter), and Golang. Experienced in collaborating across listed real estate developers, e-commerce, and software agencies, focusing on reliable backend systems and practical automation that streamline operations.',
-  th: 'นักพัฒนา Full Stack & Backend ประสบการณ์กว่า 15 ปี เชี่ยวชาญการพัฒนาระบบเว็บแอปพลิเคชัน เครื่องมืออัตโนมัติภายในองค์กร และสถาปัตยกรรมระบบด้วย Node.js, Vue.js, PHP (Laravel, CodeIgniter) และ Golang ผ่านการทำงานร่วมกับองค์กรอสังหาริมทรัพย์ชั้นนำ ธุรกิจอีคอมเมิร์ซ และดิจิทัลเอเจนซี มุ่งเน้นการสร้างระบบที่เสถียร ดูแลง่าย และช่วยเพิ่มประสิทธิภาพการทำงานจริงในองค์กร',
+  en: 'Full Stack & Backend Developer with over 15 years of experience delivering scalable web applications, internal tools that make everyday work easier for users, and enterprise workflows using Node.js, Vue.js, PHP (Laravel, CodeIgniter), and Golang. Experienced in collaborating across listed real estate developers, e-commerce, and software agencies, focusing on reliable backend systems and practical improvements that streamline daily operations.',
+  th: 'นักพัฒนา Full Stack & Backend ประสบการณ์กว่า 15 ปี เชี่ยวชาญการพัฒนาระบบเว็บแอปพลิเคชัน เครื่องมือภายในองค์กรที่ช่วยอำนวยความสะดวกให้ผู้ใช้งาน และสถาปัตยกรรมระบบด้วย Node.js, Vue.js, PHP (Laravel, CodeIgniter) และ Golang ผ่านการทำงานร่วมกับองค์กรอสังหาริมทรัพย์ชั้นนำ ธุรกิจอีคอมเมิร์ซ และดิจิทัลเอเจนซี มุ่งเน้นการสร้างระบบที่เสถียร ดูแลง่าย และช่วยเพิ่มประสิทธิภาพการทำงานจริงในองค์กร',
 }
 
 /** Location chip text. */
@@ -61,7 +61,7 @@ export const stats = {
 }
 
 /** Career Overview row values — export keeps these English in both locales. */
-export const coreSpecialty = { en: 'Full Stack & Automation', th: 'Full Stack & Automation' }
+export const coreSpecialty = { en: 'Full Stack Development', th: 'Full Stack Development' }
 export const workingStyle = { en: 'Agile / Cross-functional', th: 'Agile / Cross-functional' }
 
 /** Footer identity block. */

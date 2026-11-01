@@ -30,10 +30,10 @@ const { currentLang, t } = useLang()
         </div>
         <p class="print-summary">
           <span v-if="currentLang === 'th'">
-            นักพัฒนา <strong>Full Stack</strong> ประสบการณ์กว่า <strong>15+ ปี</strong> ผ่านการทำงานกับองค์กรชั้นนำและมหาชน <strong>8+ แห่ง</strong> ในการออกแบบและพัฒนาระบบเว็บแอปพลิเคชัน ระบบอัตโนมัติทางธุรกิจ และระบบแบ็กเอนด์ระดับองค์กร ด้วย <strong>Node.js, Vue.js, PHP (Laravel, CodeIgniter)</strong> และ <strong>Golang</strong> พร้อมประสบการณ์ด้าน <strong>Docker</strong> และ AI-assisted development
+            นักพัฒนา <strong>Full Stack</strong> ประสบการณ์กว่า <strong>15+ ปี</strong> ผ่านการทำงานกับองค์กรชั้นนำและมหาชน <strong>8+ แห่ง</strong> ในการออกแบบและพัฒนาระบบเว็บแอปพลิเคชัน ระบบที่ช่วยอำนวยความสะดวกให้ผู้ใช้งาน และระบบแบ็กเอนด์ระดับองค์กร ด้วย <strong>Node.js, Vue.js, PHP (Laravel, CodeIgniter)</strong> และ <strong>Golang</strong> พร้อมประสบการณ์ด้าน <strong>Docker</strong> และ AI-assisted development
           </span>
           <span v-else>
-            <strong>Full Stack Developer</strong> with <strong>15+ years</strong> across <strong>8+ enterprises &amp; public companies</strong>, building web applications, business automation, and enterprise backends with <strong>Node.js, Vue.js, PHP (Laravel, CodeIgniter)</strong> and <strong>Golang</strong>. Skilled in <strong>Docker</strong> and AI-assisted development.
+            <strong>Full Stack Developer</strong> with <strong>15+ years</strong> across <strong>8+ enterprises &amp; public companies</strong>, building web applications, tools that make daily work easier for users, and enterprise backends with <strong>Node.js, Vue.js, PHP (Laravel, CodeIgniter)</strong> and <strong>Golang</strong>. Skilled in <strong>Docker</strong> and AI-assisted development.
           </span>
         </p>
       </header>
@@ -63,7 +63,7 @@ const { currentLang, t } = useLang()
             </div>
             <div class="print-skill-item">
               <div class="print-skill-label" style="color: #059669;">{{ currentLang === 'th' ? 'AI-Assisted Engineering' : 'AI-Assisted Engineering' }}</div>
-              <p class="print-skill-text">Claude Code, Antigravity, OpenCode (Workflow automation &amp; agentic development)</p>
+              <p class="print-skill-text">Claude Code, Antigravity, OpenCode (agentic development &amp; everyday workflow tools)</p>
             </div>
           </section>
 
