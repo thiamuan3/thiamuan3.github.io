@@ -171,8 +171,8 @@ const { currentLang, t } = useLang()
 /* ========== HEADER ========== */
 .print-header-block {
   border-bottom: 2px solid #1E3A8A;
-  padding-bottom: 6px;
-  margin-bottom: 8px;
+  padding-bottom: 5px;
+  margin-bottom: 6px;
 }
 
 .print-header-row {
@@ -247,10 +247,10 @@ const { currentLang, t } = useLang()
 /* ========== LEFT COLUMN ========== */
 .print-left { padding-right: 0; }
 
-.print-left-section { margin-bottom: 7px; }
+.print-left-section { margin-bottom: 6px; }
 
 .print-left-title {
-  font-size: 9.5pt;
+  font-size: 11pt;
   font-weight: 700;
   color: #1E3A8A;
   text-transform: uppercase;
@@ -262,14 +262,14 @@ const { currentLang, t } = useLang()
 }
 
 /* Skills */
-.print-skill-item { margin-bottom: 5px; }
-.print-skill-label { font-size: 9pt; font-weight: 700; color: #13254D; }
-.print-skill-text { font-size: 8.5pt; color: #334155; line-height: 1.3; margin: 1px 0 0 0; }
+.print-skill-item { margin-bottom: 4px; }
+.print-skill-label { font-size: 10.5pt; font-weight: 700; color: #13254D; }
+.print-skill-text { font-size: 10pt; color: #334155; line-height: 1.3; margin: 1px 0 0 0; }
 
 /* Personality */
-.print-personality-sub { font-size: 8pt; color: #475569; font-weight: 500; margin: 0; }
+.print-personality-sub { font-size: 9.5pt; color: #475569; font-weight: 500; margin: 0; }
 .print-personality-list {
-  font-size: 8.5pt;
+  font-size: 10pt;
   color: #334155;
   line-height: 1.3;
   margin: 4px 0 0 0;
@@ -279,13 +279,13 @@ const { currentLang, t } = useLang()
 .print-personality-list strong { color: #13254D; }
 
 /* Education */
-.print-edu-degree { font-size: 9.5pt; font-weight: 700; color: #13254D; }
-.print-edu-major { font-size: 9pt; color: #EA580C; font-weight: 600; }
-.print-edu-school { font-size: 8.5pt; color: #475569; margin-top: 1px; }
-.print-edu-year { font-size: 8pt; color: #64748B; font-family: monospace; }
+.print-edu-degree { font-size: 11pt; font-weight: 700; color: #13254D; }
+.print-edu-major { font-size: 10.5pt; color: #EA580C; font-weight: 600; }
+.print-edu-school { font-size: 10pt; color: #475569; margin-top: 1px; }
+.print-edu-year { font-size: 9.5pt; color: #64748B; font-family: monospace; }
 
 /* Languages */
-.print-lang-row { display: flex; justify-content: space-between; font-size: 9pt; margin-bottom: 1px; }
+.print-lang-row { display: flex; justify-content: space-between; font-size: 10.5pt; margin-bottom: 1px; }
 .print-lang-name { font-weight: 600; color: #13254D; }
 .print-lang-level { color: #475569; }
 
@@ -307,7 +307,7 @@ const { currentLang, t } = useLang()
   position: relative;
   padding-left: 10px;
   border-left: 2px solid #CBD5E1;
-  margin-bottom: 6px;
+  margin-bottom: 4px;
 }
 .print-exp-highlight { border-left-color: #EA580C; }
 
@@ -325,7 +325,7 @@ const { currentLang, t } = useLang()
   margin: 0;
 }
 .print-exp-period {
-  font-size: 8.5pt;
+  font-size: 8.9pt;
   font-weight: 600;
   color: #475569;
   font-family: monospace;
@@ -338,7 +338,7 @@ const { currentLang, t } = useLang()
 }
 
 .print-exp-list {
-  font-size: 8pt;
+  font-size: 8.4pt;
   line-height: 1.25;
   color: #13254D;
   margin: 2px 0 0 0;
@@ -348,7 +348,7 @@ const { currentLang, t } = useLang()
 .print-exp-list strong { color: #13254D; }
 
 .print-exp-tags {
-  font-size: 7.8pt;
+  font-size: 8.2pt;
   font-weight: 500;
   color: #64748B;
   margin-top: 2px;
@@ -369,7 +369,7 @@ const { currentLang, t } = useLang()
   margin-bottom: 3px;
 }
 .print-early-range {
-  font-size: 8pt;
+  font-size: 7.9pt;
   font-weight: 400;
   color: #64748B;
   font-family: monospace;
@@ -378,16 +378,16 @@ const { currentLang, t } = useLang()
   margin-bottom: 3px;
 }
 .print-early-name {
-  font-size: 8.5pt;
+  font-size: 8.9pt;
   font-weight: 600;
   color: #13254D;
 }
 .print-early-period-inline {
-  font-size: 7.5pt;
+  font-size: 7.9pt;
   color: #64748B;
 }
 .print-early-desc {
-  font-size: 8pt;
+  font-size: 8.4pt;
   color: #475569;
   line-height: 1.25;
 }

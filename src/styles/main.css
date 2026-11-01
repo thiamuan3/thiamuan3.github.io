@@ -54,57 +54,24 @@ html {
   vertical-align: middle;
 }
 
+/* Printing swaps the whole page for the self-styled A4 sheet in PrintResume.vue,
+   so only global resets live here — broad element rules (section padding,
+   heading colors, ...) would leak into that sheet and override its design. */
 @media print {
-  /* Hide screen layout, show print layout */
-  .screen-only {
+  .screen-only,
+  .no-print {
     display: none !important;
   }
   #print-resume {
     display: block !important;
   }
-  /* Hide interactive / chrome-only elements */
-  .no-print {
-    display: none !important;
-  }
-  /* Force light readable background even if dark-mode was active */
-  html, body, section, div, header, footer, nav, main, article,
-  [class*="dark:bg-"],
-  [class*="dark:from-"],
-  [class*="dark:to-"],
-  .bg-cream\/40,
-  .bg-cream\/60 {
-    background: white !important;
-    background-color: white !important;
-  }
-  /* Force dark text to black so it is readable on paper */
-  [class*="dark:text-"] {
-    color: #0f172a !important;
-  }
-  /* Borders: keep structure but dial down contrast */
-  .border {
-    border-color: #cbd5e1 !important;
-  }
-  [class*="border-slate-"] {
-    border-color: #cbd5e1 !important;
-  }
-  /* Shadows: no shadows on paper */
   * {
     box-shadow: none !important;
   }
-  /* Stay black on white everywhere */
   body {
     background: white !important;
     color: black !important;
   }
-  .page-break { page-break-before: always; }
-  /* Compact */
-  section {
-    padding-top: 1rem !important;
-    padding-bottom: 1rem !important;
-  }
-  h1, h2, h3, h4 { color: #0f172a !important; }
-  /* Links: readable */
-  a { color: #1e3a8a !important; text-decoration: underline; }
 }
 
 /* Respect users who ask for less motion (plan step 2). */

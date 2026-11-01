@@ -7,6 +7,9 @@ import { items, earlyCareer } from './experience'
  * changes the approved wording on the web page. Thai is reused from
  * experience.js (already approved for print); only English is rewritten, except
  * Noble's merged Auto Label + MOA bullet, which exists only in print.
+ * Noble's umbrella "System Architecture & Automation" bullet is left out of
+ * print (owner decision) — the Auto Label / Pre-Transfer / Back-Office bullets
+ * and the Tech Stack tags already carry its content; the web page keeps it.
  * Entries without an override print their web wording unchanged.
  *
  * Bullets are HTML strings rendered with v-html — repo-static data only,
@@ -29,10 +32,6 @@ const moneyTable = webBullets(MONEYTABLE)
 /** @type {Record<string, Bi[]>} Print bullets keyed by experience company. */
 export const printBullets = {
   [NOBLE]: [
-    {
-      en: '<strong>System Architecture &amp; Automation:</strong> Architected end-to-end automation systems with Node.js and Vue.js for property management and unit handover.',
-      th: noble[0].th,
-    },
     {
       en: '<strong>Auto Label &amp; MOA Generation:</strong> Automated mail-label and high-volume legal MOA document generation, eliminating manual data entry.',
       th: '<strong>Auto Label &amp; MOA Generation:</strong> พัฒนาระบบสร้างใบจ่าหน้าและเอกสารสัญญาแนบท้าย (MOA) อัตโนมัติ ลดปัญหาคอขวดจากการกรอกข้อมูลด้วยมือในกระบวนการกระจายเอกสารโครงการ',
