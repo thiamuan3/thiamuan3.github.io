@@ -49,7 +49,7 @@ function dotVariant(item, index) {
         <!-- Early career (2010–2013): smaller summary card, last timeline block. -->
         <div class="relative group">
           <div
-            class="absolute -left-[31px] sm:-left-[39px] top-1.5 w-4 h-4 rounded-full bg-slate-300 dark:bg-slate-700"
+            class="absolute -left-[32px] sm:-left-[40px] top-1.5 w-4 h-4 rounded-full bg-slate-300 dark:bg-slate-700"
           ></div>
           <div
             class="bg-slate-50 dark:bg-slate-900/40 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 text-sm space-y-4"
