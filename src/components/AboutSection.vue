@@ -1,7 +1,7 @@
 <script setup>
 import { useLang } from '../composables/useLang'
 import { hero, overviewCard, statCards } from '../data/about'
-import { name, secondaryName, summary, location, contact, getEmail, getTel, getTelDisplay } from '../data/profile'
+import { name, summary, location, contact, getEmail, getTel, getTelDisplay } from '../data/profile'
 import profileImg from '../assets/profile.jpg'
 
 const { t } = useLang()
@@ -55,10 +55,7 @@ const overviewRowClasses = ['font-semibold text-slate-900 dark:text-white', 'fon
           </div>
           <div class="space-y-4">
             <h1 class="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-slate-900 dark:text-white leading-tight">
-              <span>{{ t(name) }}</span>
-              <span class="block text-2xl sm:text-3xl font-semibold text-slate-600 dark:text-slate-400 mt-1 font-sans">{{
-                t(secondaryName)
-              }}</span>
+              {{ t(name) }}
             </h1>
             <p class="sm:text-lg text-slate-700 dark:text-slate-200 leading-relaxed max-w-2xl sm:text-xl">
               {{ t(summary) }}
