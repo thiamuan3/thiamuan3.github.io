@@ -238,7 +238,7 @@ const { currentLang, t } = useLang()
 /* ========== LEFT COLUMN ========== */
 .print-left { padding-right: 0; }
 
-.print-left-section { margin-bottom: 6px; }
+.print-left-section { margin-bottom: 10px; }
 
 .print-left-title {
   font-size: 11pt;
@@ -248,7 +248,7 @@ const { currentLang, t } = useLang()
   letter-spacing: 0.5px;
   border-bottom: 1px solid #E2E8F0;
   padding-bottom: 2px;
-  margin: 0 0 5px 0;
+  margin: 0 0 7px 0;
   font-family: 'Prompt', 'Inter', sans-serif;
 }
 
@@ -298,7 +298,7 @@ const { currentLang, t } = useLang()
   position: relative;
   padding-left: 10px;
   border-left: 2px solid #CBD5E1;
-  margin-bottom: 4px;
+  margin-bottom: 7px;
 }
 .print-exp-highlight { border-left-color: #EA580C; }
 
